@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#5daf61">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5daf61">
+    <meta name="description" content="私の自己紹介サイトです。">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" media="all" href="css/reset.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" id="favicon">
+    <link rel="icon" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180-precomposed">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="all" href="css/study.css">
+</head>
+
+<body>
+<!-- header --------------------------->
+    <nav class="navbar  fixed-top navbar-light row justify-content-md-center">
+        <div class="navbar-brand col r-col">
+            <a href="index.html"><i class="bi bi-arrow-through-heart"></i>MyPortfolio</a>
+        </div>
+        <div class="dropdown col l-col">
+
+            <!-- ↓PCメニュー -->
+            <div class="pc-menu">
+                <a href="https://twitter.com/sevenstars3579?t=VTkMH4_38jLqSHgsLV213g&s=09"><i
+                        class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/hori.1207/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCDyBeQpw7A6LtHtn1KwYy-w/featured"><i
+                        class="bi bi-youtube"></i></a>
+                <a href="https://github.com/HORI1207"><i class="bi bi-github"></i></a>
+
+                <button class="btn btn-outline-light" type="button" id="ddbtn">
+                    MENU▼
+                </button>
+                <div class="ddml" id="ddmenu">
+                    <ul class="ddd">
+                        <li><a class="dpd dropdown-item" href="#a1">PROFILE</a></li>
+                        <li><a class="dpd dropdown-item" href="#a2">SNS</a></li>
+                        <li><a class="dpd dropdown-item" href="#a3">PORTFOLIO</a></li>
+                        <li><a class="dpd dropdown-item" href="#a3" id="about1">・ErrorDiary</a></li>
+                        <li><a class="dpd dropdown-item" href="#a3" id="service1">・STWC</a></li>
+                        <li><a class="dpd dropdown-item" href="#a3" id="book1">・BookLog</a></li>
+                        <li><a class="dpd dropdown-item" href="#a3" id="print1">・Printing</a></li>
+                    </ul>
+                </div>
+                <div id="maskpc" class="offpc"></div>
+            </div>
+
+            <!-- ↓スマホメニュー -->
+            <div class="sp-menu">
+                <span class="material-icons-outlined op" id="op">menu</span>
+                <span class="material-icons-outlined cl offhmg" id="cl">close</span>
+
+                <div class="overlay" id="hmg">
+                    <ul class="ddd">
+                        <li><a class="cli dropdown-item" href="#a1">PROFILE</a></li>
+                        <li><a class="cli dropdown-item" href="#a2">SNS</a></li>
+                        <li><a class="cli dropdown-item" href="#a3">PORTFOLIO</a></li>
+                        <li><a class="cli dropdown-item" href="#a3" id="about2">・ErrorDiary</a></li>
+                        <li><a class="cli dropdown-item" href="#a3" id="service2">・STWC</a></li>
+                        <li><a class="cli dropdown-item" href="#a3" id="book2">・BookLog</a></li>
+                        <li><a class="cli dropdown-item" href="#a3" id="print2">・Printing</a></li>
+                        <li><a class="snsi" href="https://twitter.com/sevenstars3579?t=VTkMH4_38jLqSHgsLV213g&s=09"><i
+                                    class="bi bi-twitter"></i></a>
+                            <a class="snsi" href="https://www.instagram.com/hori.1207/"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a class="snsi" href="https://www.youtube.com/channel/UCDyBeQpw7A6LtHtn1KwYy-w/featured"><i
+                                    class="bi bi-youtube"></i></a>
+                            <a class="snsi" href="https://github.com/HORI1207"><i class="bi bi-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="mask" class="offhmg"></div>
+            </div>
+        </div>
+    </nav>
+
+<!-- main ------------------------------------------------>
+
+    <section id="a1">
+        <div class="wrapper-top">
+            <div class="card mb-3" style="max-width: 2000px;">
+                <div class="row g-0">
+                    <div class="card-header h3">
+                        PROFILE
+                    </div>
+                    <div class="col-md-4 center">
+                        <img src="images/1451666593262.jpg" class="img-thumbnail pfimg" alt="プロフィール画像">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th scope="row">ペンネーム</th>
+                                    <td>HORI1207</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">出身,現住所</th>
+                                    <td>大阪府</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">趣味</th>
+                                    <td>中国語学習、野球観戦、プログラミング学習、動画制作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">特技</th>
+                                    <td>魚をさばける</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">好きなスポーツ</th>
+                                    <td>野球</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">好きなゲーム</th>
+                                    <td>クラロワ、フォートナイト、マインクラフト</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">現在の自己啓発</th>
+                                    <td>HTML,CSS,JavaScript,PHP,SQL,Laravel,Docker,AWS</td>
+                                </tr>
+                            </table>
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <ul>
+                                        <li>印刷会社で１４年間勤務していました。</li>
+                                        <li>和食の調理師をしていたことがあります。</li>
+                                        <li>学生時代は野球部でした。</li>
+                                    </ul>
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="a2">
+        <div class="card mb-3" style="max-width: 2000px;">
+            <div class="card-header h3">
+                SNS
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="https://twitter.com/sevenstars3579?t=VTkMH4_38jLqSHgsLV213g&s=09">
+                            <img src="images/twlogo.png" width="168" height="168" alt="twitter"></a>
+                        <p>【Twitter】</p>
+                    </div>
+                    <div class="col-sm">
+                        <a href="https://github.com/HORI1207"><img src="images/github.png" width="168" height="168"
+                                alt="GitHub"></a>
+                        <p>【GitHub】</p>
+                    </div>
+                    <div class="col-sm">
+                        <a href="https://www.instagram.com/hori.1207/"><img src="images/instlogo.png" width="168"
+                                height="168" alt="instagram"></a>
+                        <p>【Instagram】<br>趣味でゲームの動画上げてます。</p>
+                    </div>
+                    <div class="col-sm">
+                        <a href="https://www.youtube.com/channel/UCDyBeQpw7A6LtHtn1KwYy-w/featured"><img
+                                src="images/ytlogo.png" width="168" height="168"
+                                alt="https://www.youtube.com/channel/UCDyBeQpw7A6LtHtn1KwYy-w/featured"></a>
+                        <p>【YouTube】<br>趣味でゲームの動画上げてます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wrapper">
+        <section id="a3">
+            <div class="card mb-3" style="max-width: 2000px;">
+                <div class="card-header h3">
+                    PORTFOLIO
+                </div>
+
+                <!-- タブメニュー--------------------------------------------------------- -->
+                <div class="tabcontainer">
+                    <ul class="menu">
+                        <li><a href="" class="tab about2 active" data-id="about">ErrorDiary</a></li>
+                        <li><a href="" class="tab service2" data-id="service">SSTWC</a></li>
+                        <li><a href="" class="tab book2" data-id="book">BookLog</a></li>
+                        <li><a href="" class="tab print2" data-id="print">Printing</a></li>
+                    </ul>
+
+                    <section class="content about active" id="about">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="http://35.78.15.146/"><img src="images/error.png" class="img-thumbnail"
+                                        alt="ErrorDiary"></a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        【目的】<br>
+                                        アプリ作成中に遭遇したエラーを記録するシンプルなアプリです。PHPのフレームワーク、laravelとAWSを初めて使用し、知識を深めていくために作成したポートフォリオです。<br>
+                                        <br>
+                                        【使用したツールと技術】<br>
+                                        Linux / VScode / docker / AWS(EC2) / GitHub / HTML / CSS / PHP / MySQL /
+                                        laravel /
+                                        Bootstrap / <br>
+                                        <br>
+                                        【このアプリの作成で苦労した点】<br>
+                                        laravelのMVCの概念を理解するのに戸惑いましたが、いろんな便利機能が有るようなので、使いこなせるようになるべく今後もlaravelを勉強する予定です。
+                                    </p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="content service" id="service">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="https://first-twc1207.herokuapp.com/"><img
+                                        src="images/twc.png" class="img-thumbnail" alt="SSTWC"></a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        【目的】<br>
+                                        シンプルな掲示板アプリです。PHPとSQLの知識を深めていくために作成したポートフォリオです。<br>
+                                        <br>
+                                        【使用したツールと技術】<br>
+                                        Linux / VScode / docker / heroku / GitHub / HTML / CSS / PHP / MySQL,<br>
+                                        <br>
+                                        【このアプリの作成で苦労した点】<br>
+                                        前回のアプリ作成時にdockerがかなり不安定で苦労したので、今回はXAMMPを使用して作成しました。しかし、XAMMP環境で作成したアプリケーションのHerokuへのデプロイの方法についてわかりやすく載っている情報が見当たらなかったので、結局作成したファイルをdocker環境に移動してデプロイしました。
+                                        そのことが原因かは定かではないが多数のエラーが発生し、トラブルの解決にとても苦労しました
+                                    </p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="content book" id="book">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="https://polar-fortress-33427.herokuapp.com/"><img src="images/book.png"
+                                        class="img-thumbnail" alt="BookLog"></a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        【目的】<br>
+                                        自分が読んだ本のログを登録し、表示できるアプリです。独学でアプリ制作の基礎知識を学ぶためにWEB教材を使って作成した初のポートフォリオです。温かい目で見ていただけたら幸いです。<br>
+                                        <br>
+                                        【使用したツールと技術】<br>
+                                        Linux / VScode / docker / heroku / GitHub / HTML / CSS / SCSS / bootstrap / PHP
+                                        /
+                                        MySQL<br>
+                                        <br>
+                                        【このアプリ作成で苦労した点】<br>
+                                        dockerコンテナが落ちて起動できないトラブルが多発してなかなか作業が進まないことが一番苦労しました。その他にも多数のトラブルに遭遇しましたが、なんとかWEB上に公開することができました。しかし独学なので誰かに質問したり助けを求めたりすることができなかったのは辛い部分でした。
+                                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="content print" id="print">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="https://print.hori1207.site/"><img src="images/print.png"
+                                        class="img-thumbnail" alt="Printing"></a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        【目的】<br>
+                                        印刷会社で勤務していた時に作成した業務ノートです。<br>
+                                        <br>
+                                        【使用したツールと技術】<br>
+                                        SIRIUS / HTML / CSS /<br>
+                                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- --------------------------------------------------------------- -->
+            </div>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <p>HORI&copy MY PORTFOLIO.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
